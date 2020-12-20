@@ -247,7 +247,7 @@ class MainKtTest {
 
         val isResult = service.update(expected)
         val result = service.get(expected.id)
-        assertTrue(isResult && result.ownerId == expected.ownerId && result.date == expected.date)
+        assertTrue(isResult && result.ownerId == copy.ownerId && result.date == copy.date)
 
     }
 
